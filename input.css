@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Ubuntu:wght@500;700&family=Work+Sans:wght@300;400;700;900&display=swap');@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/** Default Body / Html Design **/
+*{
+    @apply m-0 p-0 w-full box-border;
+    font-family: 'Poppins', sans-serif;
+
+    /* 
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Work Sans', sans-serif; */
+}
+
+.container{
+    @apply  w-[90%] h-auto bg-bg-dark mx-auto my-0 p-0 box-border;
+  
+    max-width: 1500px;
+    
+}
