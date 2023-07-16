@@ -50,10 +50,87 @@ const Home = () => {
                         <Carouselitem url={url} name={6}/>
                         <Carouselitem url={url} name={7}/>
                         <Carouselitem url={url} name={8}/>
-                        
                 </div>
              </div>
          </div>
+         <div className={styles.home_about}>
+            <div className={styles.about_heading} >
+                <h1>FAQ</h1>
+            </div>
+            <div className={styles.about_details}>
+                <div className={styles.question_info}>
+                    <div className={styles.question_answer}>
+                        <div className={styles.question_header}><h1>For Gurdians or Students</h1></div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <h1 className={styles.answer_header}>Search For Tutors and Post For Job</h1>
+                                    <p>
+                                        Search from our huge database of home tutors 
+                                        matching your needs and if you need help, you can 
+                                        post your tuition requirement here for free. One of 
+                                        our team member will get in touch with you soon 
+                                        over the phone to discuss and confirm your requirements.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h1 className={styles.answer_header}>Hire Your Tutor</h1>
+                                    <p>
+                                        If you like the demo session, 
+                                        you continue with the same teacher .
+                                        In case, If you do not like the demo session, 
+                                        we will arrange a new teacher for you.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={styles.question_img}>
+                        <img src="../../images/rmhero.png"/>
+                    </div>
+                </div>
+                <div className={styles.question_info}>
+                    <div className={styles.question_img}>
+                        <img src="../../images/gurdian.svg"/>
+                    </div>
+                    <div className={styles.question_answer}>
+                        <div className={styles.question_header}><h1>For Tutors</h1></div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <h1 className={styles.answer_header}>Create Tutor Profile</h1>
+                                    <p >
+                                        Become a teacher by creating your profile here and tell us about yourself, 
+                                        your skills, subject expertise, qualifications, 
+                                        teaching ability and experience. Be sure to provide 
+                                        as much information as you can in your profile so 
+                                        that we can speed up the verification process 
+                                        and your profile starts showing up in the right
+                                         spot when parents and 
+                                        students are searching for home tutors on our website.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h1 className={styles.answer_header}>Apply for Jobs</h1>
+                                    <p>
+                                        Once your profile is complete, you can start browsing our latest TUITION JOBS page and 
+                                        start applying for the tuition jobs that best fits your 
+                                        skills, favorable location, class and subjects.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div className={styles.offer}>
+              <p>So, Why you are waiting....</p>
+              <p>Join Us</p>
+              <button type="button"><NavLink to="">JOIN US</NavLink></button>
+        </div>
     </div>
   );
 };
