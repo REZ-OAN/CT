@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Ubuntu:wght@500;700&family=Work+Sans:wght@300;400;700;900&display=swap');
 
+@tailwind base;
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -523,8 +525,6 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-
-@tailwind 'base';
 
 *{
   margin: 0px;
