@@ -25,6 +25,11 @@ const Footer = () => {
             <li><NavLink to="/contact">Contact Us</NavLink></li>  
             <li><NavLink to={pagePath}>{pageName}</NavLink></li>  
           </ul>
+          <div className={styles.social_link}>
+            <a href="#"><img src="images/facebook.png"/></a>
+            <a href="#"><img src="images/github.png"/></a>
+            <a href="#"> <img src="images/new.png"/></a>
+          </div>
         </div>
         <div className={styles.contactme}>
             <form className={styles.form_foot}>

@@ -1,89 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Ubuntu:wght@500;700&family=Work+Sans:wght@300;400;700;900&display=swap');@import "tailwindcss/base";
-@import "tailwindcss/base";
+@tailwind 'base';
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/** Default Body / Html Design **/
 *{
-    @apply m-0 p-0 w-full box-border;
+    @apply m-0 p-0 box-border;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
+}
+.home_container{
+    @apply w-[95%]  mx-auto  bg-bg-dark;
+}
+.hero {
+    @apply w-full flex flex-row items-center justify-between p-10;  
+}
+.hero_text{
+    @apply text-[3rem] text-left text-white;
+}
+.hero_text p span{
+    @apply text-[2rem] text-left text-hover-light;
+}
+@keyframes scaleUp {
+    from{transform: scale(.9);}
+    to {transform: scale(1);}
+    
+}
+.hero_text button {
+    @apply text-[2rem] w-[15rem] text-center p-2 rounded-md  text-white bg-blue-600;
+    animation-name:scaleUp ;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse ;
+    animation-iteration-count: infinite;
+    transition: .4s all;
+}
+.hero_text button:hover{
+    box-shadow: 0 0 10px black;
+    animation :none;
+}
 
-    /* 
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Work Sans', sans-serif; */
-}
-.main_foot{
-    @apply w-[95%]   mx-auto flex flex-col items-center;
-}
-.foot_container{
-    @apply  bg-hover-light mx-auto flex flex-row justify-between px-5;
-}
-.logo {
-    @apply min-w-[320px] mb-4;
-}
-.foot_description p{
-    @apply  text-white text-[1.2rem] text-justify;
-}
-.foot_description {
-    @apply p-[2rem] flex flex-col items-start ;
-}
-.link_list {
-    @apply flex flex-row items-start justify-center px-[3rem] mt-10;
+@keyframes transLate {
+    from {transform: translateY(5px);}
+    to {transform : translateY(-5px);}
     
 }
-.links{
-    @apply w-[12rem];
+.hero_img img{
+    @apply w-[70rem];
+    animation-name : transLate;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+.home_recommend{
+    height: 1000px;
     
-}
-.links p{
-    @apply text-[2rem] text-red-600;
-}
-.links li {
-    @apply text-bg-dark hover:text-red-600 text-[1.5rem];
-}
-.contactme{
-    @apply p-10 flex flex-row justify-center;
-
-}
-.form_foot{
-    @apply flex flex-col justify-center gap-5 items-center;
-    min-width: 25rem;
-}
-.form_foot input {
-    @apply  h-[3rem] p-4 ;
-    
-    border-radius: 4px;
-}
-.form_foot input:focus,textarea:focus {
-    outline: none !important;
-    border:2px solid red;
-    box-shadow: 0 0 10px #719ECE;
   }
-.form_foot textarea{
-    @apply p-4;
-    border-radius: 4px;
+  
+  .home_recommend .recommend_heading{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home_recommend .recommend_heading h1{
+    @apply w-[35rem];
+    padding: 0.5rem;
+    font-size: 3rem;
+    
+    line-height: 1;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid rgba(101, 134, 245, 0.24);
+  }
+  
+  .home_recommend .recommend_carousel{
+    @apply  bg-bg-light;
+    margin-top: 2rem;
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.363);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .carousel_body{
+    height: 700px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    
+    overflow: hidden;
+    
+    
+  }
+  
+  .left_btn{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .right_btn{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+  }
+  
+  
+  
+@media screen and (max-width:1200px) {
+    .hero {
+        @apply w-full flex flex-col items-center justify-between p-10;  
+    }
+    .hero_text{
+        @apply text-[3rem] text-center text-white;
+    }
 }
-.form_foot button{
-    @apply p-2 text-xl w-[10rem] text-white bg-bg-light font-bold hover:bg-bg-dark;
-    border-radius: 5px;
-    transition: .3s all;
-}
-.foot {
-    @apply  bg-bg-dark mx-auto flex flex-row justify-center items-center text-[1.2rem] py-2 text-white;
+@media screen and (max-width:675px) {
+    .hero_text{
+        @apply text-[2.5rem] text-center text-white;
+    } 
 }
 
-@media screen and (max-width:1240px) {
-
-    .foot_container{
-        @apply  bg-hover-light mx-auto flex flex-col items-center px-5;
-    }
-    .logo {
-        @apply max-w-[420px] mb-4;
-    }
-    .foot_description {
-        @apply p-[2rem] flex flex-col items-center ;
-    }
-    .form_foot{
-        @apply max-w-[50rem];
-    }
-}
+  
