@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className={styles.contact_container}>
       <div className={styles.contact_location}>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8928.89529852174!2d91.96994093312966!3d22.45790758767303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1689599352638!5m2!1sen!2sbd"   allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8928.89529852174!2d91.96994093312966!3d22.45790758767303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1689599352638!5m2!1sen!2sbd"   loading="lazy"></iframe>
       </div>
       <div className={styles.home_contact} >
             <div className={styles.contact_heading} >

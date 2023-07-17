@@ -6,7 +6,7 @@ const Header = () => {
     const pageUrl = "/";
     const pageName ="Find Tutor";
     const componentSigninorProfile = "SIGN IN";
-    const componentUrl = "/";
+    const componentUrl = "/Signin";
     const [isOpen,setIsopen] = useState(false);
     const open = isOpen? styles.open : '';
     const leftX = isOpen? styles.leftX : '';
