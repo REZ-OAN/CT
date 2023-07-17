@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Signin from './components/Signin';
+import Signup from './components/Signup';
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/signin" element={<Signin/>}/>
+        <Route path="/signup" element={<Signup/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

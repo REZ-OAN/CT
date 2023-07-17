@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "buildct": "npx tailwindcss -i ./input.css -o ./src/css/signin.module.css --watch"
+    "buildct": "npx tailwindcss -i ./input.css -o ./src/css/signup.module.css --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

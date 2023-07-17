@@ -10,48 +10,58 @@
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
-.signin_container{
-    @apply w-[95%] h-[800px] mx-auto my-0 flex items-center justify-center bg-bg-dark;
+.signup_container{
+    @apply w-[95%] h-[1000px] mx-auto bg-bg-dark flex flex-col items-center justify-start p-10;
 }
-
-.signin_body{
-    @apply w-[600px] h-[650px] flex flex-col items-center bg-blue-500 rounded-xl px-10;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.342);
-}
-.signin_body h1{
-    @apply w-[15rem] text-white text-[3rem] text-center mt-5;
+.signup_container h1 {
+    @apply text-center  text-white text-[4rem] w-[20%] mb-10;
     border-bottom: 3px solid blueviolet;
 }
-.signin_body p{
-    @apply text-[1.5rem] mt-10;
+.signup_info {
+    @apply w-full  flex flex-row items-start justify-start;
 }
-.role {
-    @apply w-[60%] flex flex-row justify-between mb-8;
+.signup_body {
+       @apply w-[60%] rounded-lg shadow-xl h-[700px] bg-blue-600 flex flex-col items-center justify-start gap-5;
+       
 }
-.role div {
-    @apply w-[12rem] h-[40px] flex flex-row items-center justify-start gap-3;
-   
+.signup_body button {
+    @apply w-[30%] h-[60px] rounded-lg bg-blue-800 hover:bg-bg-active text-[2rem] text-white;
 }
-.role input{
-    @apply h-[28px] w-[28px];
-    border : 1px solid black;
+.signup_body p {
+    @apply text-white pl-10 text-[1.1rem];
 }
-.role span{
-    @apply font-bold;
+.signup_body p span:hover{
+    @apply text-[1.2rem] text-[crimson];
 }
-.sign_inp {
-    @apply h-[60px] w-[90%] px-8 rounded-lg mb-8;
+.signup_left{
+    @apply p-10 flex flex-col items-center gap-3;
+    
 }
-.signin_body button {
-    @apply w-[30%] h-[60px]  bg-blue-700  text-white text-[2rem] rounded-lg hover:shadow-lg hover:bg-bg-dark;
+.signup_right{
+    @apply p-10 flex flex-col items-center;
+    
 }
-.forget_pass{
-    @apply pl-8 text-[17px] mb-5;
+.signup_right input[type="radio"]{
+        @apply h-[25px] w-[25px];
 }
-.signup_nav{
-    @apply text-[17px] mt-4;
+.signup_right input[type="file"]{
+    @apply h-[60px] w-[100%] inline-block my-5 bg-white py-4;
 }
-.signup_nav span{
-    @apply text-[20px] hover:text-white;
-    transition: all .4s ease-in-out;
+.signup_right p {
+    @apply pl-1;
+}
+.labels_design {
+ @apply flex flex-row ;
+}
+.labels_design div{
+    @apply  py-2 flex flex-row items-center gap-2 text-[1.5rem];
+}
+.labels_design span{
+    @apply text-white font-bold;
+}
+.signup_inp {
+    @apply h-[60px] px-5 rounded-lg;
+}
+.signup_right p{
+    @apply text-[1.2rem] text-white
 }
