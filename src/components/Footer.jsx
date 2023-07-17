@@ -27,7 +27,7 @@ const Footer = () => {
           </ul>
           <div className={styles.social_link}>
             <a href="#"><img src="images/facebook.png"/></a>
-            <a href="#"><img src="images/github.png"/></a>
+            <a href="#"><img src="images/gitw.png"/></a>
             <a href="#"> <img src="images/new.png"/></a>
           </div>
         </div>

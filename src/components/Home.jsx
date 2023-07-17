@@ -128,7 +128,6 @@ const Home = () => {
         </div>
         <div className={styles.offer}>
               <p>So, Why you are waiting....</p>
-              <p>Join Us</p>
               <button type="button"><NavLink to="">JOIN US</NavLink></button>
         </div>
     </div>
