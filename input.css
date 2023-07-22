@@ -10,58 +10,62 @@
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
-.signup_container{
-    @apply w-[95%] h-[1000px] mx-auto bg-bg-dark flex flex-col items-center justify-start p-10;
+
+.tutor_container{
+    @apply w-[95%] h-[800px] bg-bg-dark mx-auto my-0 flex;
+    border:2px solid yellow;
 }
-.signup_container h1 {
-    @apply text-center  text-white text-[4rem] w-[20%] mb-10;
+ .tutor_profile{
+    @apply w-[40%] bg-bg-light flex flex-col items-center;
+}
+
+.tutor_head{
+  @apply h-[400px] w-[80%] flex flex-col items-center p-10 relative ;
+}
+.tutor_head img{
+    @apply h-[320px] w-[320px] rounded-full;
+    border : 5px solid goldenrod;
+}
+.tutor_head button{
+    @apply absolute text-white text-4xl font-bold
+     bg-bg-active w-[60px] h-[60px] rounded-full top-[75%] left-[63%];
+     border: 2px solid blueviolet;
+}
+.tutor_head button:hover{
+    @apply bg-blue-400;
+}
+.tutor_body{
+    @apply h-[400px] flex flex-col items-start px-10;
+}
+.tutor_body input {
+    @apply h-[50px] rounded-lg bg-transparent text-white text-xl my-3 px-3 py-4;
+    border: 2px solid white;
+}
+
+.tutor_control{
+    @apply h-[100px] flex items-center justify-center rounded-lg;
+    
+}
+.tutor_control button {
+    @apply h-[70px]  bg-bg-active hover:bg-blue-400 text-xl font-bold text-white;
+}
+.tutor_control button:first-child {
+    @apply  rounded-l-lg;
+    border-right: 1px solid black;
+
+}
+.tutor_control button:last-child{
+    @apply rounded-r-lg;
+
+}
+.tuition_requests{
+    @apply w-[60%] flex flex-col items-center py-8 px-5;
+}
+.tuition_requests h1{
+    @apply text-white text-[4rem];
     border-bottom: 3px solid blueviolet;
 }
-.signup_info {
-    @apply w-full  flex flex-row items-start justify-start;
-}
-.signup_body {
-       @apply w-[60%] rounded-lg shadow-xl h-[700px] bg-blue-600 flex flex-col items-center justify-start gap-5;
-       
-}
-.signup_body button {
-    @apply w-[30%] h-[60px] rounded-lg bg-blue-800 hover:bg-bg-active text-[2rem] text-white;
-}
-.signup_body p {
-    @apply text-white pl-10 text-[1.1rem];
-}
-.signup_body p span:hover{
-    @apply text-[1.2rem] text-[crimson];
-}
-.signup_left{
-    @apply p-10 flex flex-col items-center gap-3;
-    
-}
-.signup_right{
-    @apply p-10 flex flex-col items-center;
-    
-}
-.signup_right input[type="radio"]{
-        @apply h-[25px] w-[25px];
-}
-.signup_right input[type="file"]{
-    @apply h-[60px] w-[100%] inline-block my-5 bg-white py-4;
-}
-.signup_right p {
-    @apply pl-1;
-}
-.labels_design {
- @apply flex flex-row ;
-}
-.labels_design div{
-    @apply  py-2 flex flex-row items-center gap-2 text-[1.5rem];
-}
-.labels_design span{
-    @apply text-white font-bold;
-}
-.signup_inp {
-    @apply h-[60px] px-5 rounded-lg;
-}
-.signup_right p{
-    @apply text-[1.2rem] text-white
-}
+.tuition_request{
+    @apply bg-white h-[650px] mt-10 rounded-lg shadow-lg flex flex-row
+     justify-center relative flex-wrap overflow-y-scroll ;
+}  
