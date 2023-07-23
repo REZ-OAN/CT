@@ -9,6 +9,7 @@ import Signup from './components/Signup';
 import Tutorprofile from './components/Tutorprofile';
 import Gurdianprofile from './components/Gurdianprofile';
 import Tutorfiltering from './components/Tutorfiltering';
+import Postfiltering from './components/Postfiltering';
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/gurdianprofile" element={<Gurdianprofile/>}/>
         <Route path="/tutorprofile" element={<Tutorprofile/>}/>
         <Route path="/tutorfiltering" element={<Tutorfiltering/>}/>
+        <Route path="/postfiltering" element={<Postfiltering/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
