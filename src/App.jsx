@@ -6,9 +6,9 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
-import Tuitionreq from './components/Tuitionreq';
 import Tutorprofile from './components/Tutorprofile';
 import Gurdianprofile from './components/Gurdianprofile';
+import Tutorfiltering from './components/Tutorfiltering';
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/gurdianprofile" element={<Gurdianprofile/>}/>
         <Route path="/tutorprofile" element={<Tutorprofile/>}/>
+        <Route path="/tutorfiltering" element={<Tutorfiltering/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
