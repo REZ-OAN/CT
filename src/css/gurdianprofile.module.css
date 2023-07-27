@@ -544,7 +544,7 @@ video {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  height: 1700px;
+  height: 2000px;
   width: 95%;
   --tw-bg-opacity: 1;
   background-color: rgb(36 37 130 / var(--tw-bg-opacity));
@@ -793,7 +793,7 @@ video {
   position: relative;
   margin-top: 2.5rem;
   display: flex;
-  height: 500px;
+  height: 650px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
