@@ -44,7 +44,14 @@ const Gurdianprofile = () => {
                 </div>
                 <div className={styles.tuition_subjects}>
                     <label>Subjects</label>
-                    <input type='text' placeholder='enter subjects name separated by comma (,)'/>
+                <div>
+                    <div><input type="checkbox"/><p>Eight</p></div>
+                    <div><input type="checkbox"/><p>SSC</p></div>
+                    <div><input type="checkbox"/><p>HSC</p></div>
+                    <div><input type="checkbox"/><p>Admission</p></div>
+                    <div><input type="checkbox"/><p>Skill Development</p></div>
+                </div> 
+                    
                 </div>
                 <div className={styles.tuition_salary}>
                     <label>Salary</label>
